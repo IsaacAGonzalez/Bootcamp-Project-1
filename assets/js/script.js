@@ -32,3 +32,6 @@ localBtn.addEventListener('click', function (event) {
 
 });
 
+$(window).on('load', function() {
+    $('#modal').modal('show');
+  });
