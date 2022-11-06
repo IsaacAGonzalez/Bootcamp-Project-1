@@ -15,15 +15,15 @@
 </head>
 
 <body>
-  <nav class="navbar bg-light fixed-top">
+  <nav id="navBarid" class="navbar bg-dark fixed-top" style="background-color: #0000">
     <!-- left side nav bar w/ logo and title -->
-    <div class="container-fluid" style="background-color: #7092be;">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img id="logoimg" src="./assets/images/randomlogo.png" alt="SoCal Brew Logo" width="100" height="100"
+        <img id="logoimg" src="./assets/images/randomlogo.png" alt="SoCal Brew Logo" width="150" height="150"
           class="d-inline-block align-text-center">So-Cal Brew Hopper
       </a>
       <!-- right side with toggle : start button   -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -118,15 +118,18 @@
               <div class="col p-4 d-flex flex-column position-static">
                 <strong id="nearYou" class="d-flex justify-content-center mb-2">Brew Near You</strong>
                 <h3 class="d-flex justify-content-center mb-0"></h3>
-                <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted">SoCal destinations with the
+                <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted"></div>
+                <p id="searchinfo"
+                  class="d-flex justify-content-center card-text mb-auto text-muted align-items-center">SoCal
+                  destinations with the
                   click of the
-                  button.</div>
-                <p class="d-flex justify-content-center card-text mb-auto"></p>
+                  button.</p>
                 <!-- Search Bar   -->
                 <form class="d-flex justify-content-center mt-3" role="search">
-                  <input class="form-control me-2" type="search" style="width: 50%" placeholder="Brew & Grub"
-                    aria-label="Search" />
-                  <button id="searchBrewbtn" class="btn btn-outline-light" type="submit">Brew Me</button>
+                  <input class="form-control me-2 text-center" type="search" style="width: 50%"
+                    placeholder="Brew & Grub" aria-label="Search" />
+                  <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
+                    type="submit">Brew Me</button>
                 </form>
               </div>
               <div class="col-auto d-none d-lg-block">
@@ -173,18 +176,20 @@
   <modal class="modal fade" id="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content bg-dark text-light text-center">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">So-Cal Brew Hopper</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">So-Cal Brew Hopper</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           Disclaimer: Must be 21 years of age or older to drink alcohol. Don't be bad kids
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" style="background-color: green;" data-bs-dismiss="modal">I'm
+          <button type="button" class="btn btn-secondary" style="background-color: slategray"
+            data-bs-dismiss="modal">I'm
             older, Understood</button>
-          <button type="button" class="btn btn-primary" style="background-color: Red;" data-bs-dismiss="modal">I'm
+          <button type="button" class="btn btn-secondary" style="background-color: var(--brew);"
+            data-bs-dismiss="modal">I'm
             younger, just looking</button>
         </div>
       </div>
