@@ -1,7 +1,6 @@
-const sidebar = document.querySelector('offcanvasNavbar');
-const sidebarTitle = document.querySelector('offcanvasNavbarLabel');
-const localBtn = document.querySelector('#localBreweryBtn');
-const resultsTable = document.querySelector('searchList');
+const sidebar = document.querySelector('#offcanvasNavbar');
+const localBtn = document.querySelector('#searchBrewBtn');
+const resultsTable = document.querySelector('#tableBrew');
 
 function granted(usrPos) {
   const position = usrPos.coords;
