@@ -31,6 +31,23 @@ localBtn.addEventListener('click', function (event) {
 
 });
 
-$(window).on('load', function() {
-    $('#modal').modal('show');
-  });
+
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer d-Zk9Nv2t5lmfuhdEBns4h0UgeAFRUV3-eubcRfjSaPKo5aFhZSi_8qfL7xtTsYghIBiwSmEvaA-yZ0L83ac-wgfOQST-XQqCJ0D7QCKPosrrFnLQu0rL0iK9TVjY3Yx");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://api.yelp.com/v3/businesses/search?categories=breweries&location=san diego", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+
+$(window).on('load', function () {
+  $('#modal').modal('show');
+});
