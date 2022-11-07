@@ -46,6 +46,9 @@
     color: var(--brew);
 }
 
-/* .btn-close {
-    filter: brightness(1) invert(5);
-} */
+
+#modal {
+    font-family: 'Special Elite', cursive;
+    ;
+}
+
