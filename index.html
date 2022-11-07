@@ -19,8 +19,8 @@
     <!-- left side nav bar w/ logo and title -->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img id="logoimg" src="./assets/images/So-CAL Logo.png" alt="SoCal Brew Logo" width="150" height="150"
-          class="d-inline-block align-text-center">So-Cal Brew Hopper
+        <img id="logoimg rounded-circle" src="./assets/images/So-CAL Logo.png" alt="SoCal Brew Logo" width="150" height="150"
+          class="d-inline-block align-text-center rounded-circle">So-Cal Brew Hopper
       </a>
       <!-- right side with toggle : start button   -->
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -28,29 +28,29 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- bucket list side opened -->
-      <aside class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <aside class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <!-- side bucketlist header -->
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bucket List</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header" >
+          <h5 class="offcanvas-title fs-3" id="offcanvasNavbarLabel">Brewery Bucket List</h5>
+          <button type="button" id= "bucketClose" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <!-- side bucket list body// Table for bucketlist -->
-        <div class="container card col-sm-12">
-          <img src="https://th.bing.com/th/id/OIP.s21N6dx1luJ998AuG2xEcAAAAA?w=175&h=180&c=7&r=0&o=5&pid=1.7"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">??Description: Create Bucket List??</h5>
-            <p class="card-text">??Description: Add/Remove??</p>
+        <div class="container card col-sm-12 bg-dark">
+          <img src="./assets/images/So-CAL Logo.png"
+            class="card-img-top rounded-circle mt-3 mb-3" alt="...">
+          <div class="card-body bg-light rounded-top">
+            <h5 class="card-title">Check your bucketlist</h5>
+            <p class="card-text"></p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Isaac Brew <button>add/remove</button></li>
-            <li class="list-group-item">Christian Brew<button>add/remove</button></li>
+            <li class="list-group-item">Christen Brew<button>add/remove</button></li>
             <li class="list-group-item">Louis Brew<button>add/remove</button></li>
           </ul>
-          <div class="card-body">
+          <!-- <div class="card-body bg-light rounded-bottom">
             <a href="#" class="card-link">??Link Option??</a>
             <a href="#" class="card-link">??Link Option??</a>
-          </div>
+          </div> -->
         </div>
       </aside>
     </div>
