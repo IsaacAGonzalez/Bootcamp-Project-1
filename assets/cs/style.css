@@ -42,5 +42,9 @@ body{
 #searchinfo {
     font-size: 25px;
 }
+ 
+#tableBrew{
+    background-color: var(--black);
+}
 
 
