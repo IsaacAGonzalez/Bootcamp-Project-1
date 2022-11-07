@@ -47,8 +47,11 @@
 //   .catch(error => console.log('error', error));
 
 
+  
 $(window).on('load', function () {
-  $('#tableBrew').hide('table');
+  $('#modal').modal('show');
 });
+
+document.getElementById("tableBrew").style.display = "none";
 
 
