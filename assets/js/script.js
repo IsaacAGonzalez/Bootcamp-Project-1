@@ -47,7 +47,8 @@
 //   .catch(error => console.log('error', error));
 
 
-
 $(window).on('load', function () {
-  $('#modal').modal('show');
+  $('#tableBrew').hide('table');
 });
+
+
