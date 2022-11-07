@@ -16,7 +16,7 @@
 
 #navBarid,
 #searchBrewbtn,
-#modal   {
+#modal {
     font-family: 'Special Elite', cursive;
 }
 
@@ -45,7 +45,7 @@
     font-family: 'Special Elite', cursive;
     color: var(--brew);
 }
- #bucketClose:active{
-    color: var(--white)
 
- }
+.btn-close {
+    filter: brightness(0) invert(5);
+}
