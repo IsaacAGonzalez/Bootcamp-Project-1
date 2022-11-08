@@ -19,10 +19,15 @@
     align-items: center;
 }
 
-#navBarid {
-    font-family: 'Special Elite', cursive;
-    border-bottom: solid 4px var(--brew);
 
+.offcanvas-header{
+    color: var(--brew)
+}
+
+.navbar-brand {
+    font-size: 80px;
+    color: var(--brew);
+    border-bottom: solid 4px var(--brew);
 }
 
 #logoimg {
