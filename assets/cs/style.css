@@ -8,8 +8,6 @@
 
 }
 
-
-
 body{
     font-family: 'Special Elite', cursive;
 }
@@ -19,11 +17,9 @@ body{
     color: var(--brew);
 }
 
-
 #logoimg {
     size: 150px;
     color: var(--brew);
-    border-radius: 100px
 }
 
 #carouselimg {
@@ -35,10 +31,9 @@ body{
     background-color: var(--black);
 }
 
-
 #nearYou {
     font-size: xx-large;
-    color: var(--brew)
+    color: var(--brew);
 }
 
 #searchinfo {
@@ -48,5 +43,3 @@ body{
 #tableBrew{
     background-color: var(--black);
 }
-
-
