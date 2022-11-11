@@ -112,11 +112,22 @@ const searchBrewery = function () {
           //add text to the new column
           brewName.appendChild(document.createTextNode(business.name));
           brewRow.appendChild(brewName);
+
+          let brewRating = document.createElement("td");
+          brewRating.appendChild(document.createTextNode(business.rating));
+          brewRow.appendChild(brewRating);
+
+          let brewPrice = document.createElement("td");
+          brewPrice.appendChild(document.createTextNode(business.price));
+          brewRow.appendChild(brewPrice);
         
           let brewPhone = document.createElement("td");
-          //add text to the new column
           brewPhone.appendChild(document.createTextNode(business.phone));
           brewRow.appendChild(brewPhone);
+
+          let brewURL = document.createElement("td");
+          brewURL.appendChild(document.createTextNode(business.url));
+          brewRow.appendChild(brewURL);
         
           //IMPORTANT PART
           //create a new column for this brewery row
