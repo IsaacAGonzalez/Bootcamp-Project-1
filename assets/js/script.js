@@ -3,6 +3,32 @@ $(window).on('load', function() {
 });
 
 const addBrewery = function (name) {
+
+  let storedBrews = []
+    console.log(localStorage.storedBrews)
+  
+    if (localStorage.storedBrews == undefined) {
+      storedBrews.push(name);
+    } else {
+      storedBrews = JSON.parse(localStorage.storedBrews);
+      storedBrews.push(name);
+    }
+    console.log(storedBrews);
+    localStorage["storedBrews"] = JSON.stringify(storedBrews)
+  
+    let getBrews = 
+    console.log(localStorage.getBrews)
+  
+    getBrews = JSON.parse(localStorage.storedBrews);
+    for (let i = 0; i < getBrews.length[i]; i++) {
+      let element = getBrews[i];
+    }
+    // window.onload = function () {
+    //   const items = getFromLocalStorage();
+    //   items.forEach((item) => {
+    //    // do something with items.
+    //   });
+
   //target the brew list "ul"
   let ul = document.getElementById("brew-list");
   //create a new li or list item toput inthe list
@@ -19,6 +45,15 @@ const addBrewery = function (name) {
   btn.addEventListener("click", function () {
     //the function will target the parent "ul" of the parent "li" of the button and removes the li
     this.parentNode.parentNode.removeChild(this.parentNode);
+
+      //get the text value of the brewery name that we want to delete
+      // let deleteThis = ""
+      // let storedBrewList = JSON.parse(localStorage.storedBrews);
+      // let brewIndex = storedBrewList.indexOf(deleteThis)
+      // storedBrewList.splice(brewIndex, 1);
+  
+
+
   });
   li.appendChild(btn);
   //li.setAttribute("id", newBrewery); // added line
