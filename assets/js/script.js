@@ -36,7 +36,7 @@ const addBrewery = function (name) {
   //create a button to put in the new li you create
   let btn = document.createElement("button");
   //Add text to the new list item
-  li.appendChild(document.createTextNode(name));
+  li.appendChild(document.createTextNode(storedBrews));
   //add classes to the newlist item, will basically be pulling in the bootstrap styles
   li.classList.add("list-group-item");
   //add text to the button in this case its just X
