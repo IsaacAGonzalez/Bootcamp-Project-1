@@ -46,12 +46,13 @@
         <div class="container card col-sm-12 bg-dark">
           <img src="./assets/images/So-CAL Logo.png" class="card-img-top rounded-circle mt-3 mb-3" alt="...">
 
-          <div class="card-body bg-light rounded  ">
+          <div class="card-body bg-light rounded">
             <h5 class="card-title text-center">Your Bucketlist</h5>
 
 
             <p class="card-text"></p>
-            <ul class="list-group list-group-flush" id="brew-list"></ul>
+            <ul class="list-group list-group-flush" id="brew-list" style= "overflow: auto;
+            max-height: 40vh;"></ul>
           </div>
           <!-- <div class="card-body bg-light rounded-bottom">
             <a href="#" class="card-link">??Link Option??</a>
@@ -108,7 +109,6 @@
       </div>
     </div>
 
-
     <!-- Cards -->
     <article id="searchBrew">
       <card class="border-top col-sm-12 d-flex justify-content-center">
@@ -128,7 +128,7 @@
                 <input id="usrSearch" class="form-control me-2 text-center" type="search" style="width: 50%"
                   placeholder="Brewery Name (Optional)" aria-label="Search" />
                 <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
-                  placeholder="City/Zipcode" aria-label="Search" />
+                  placeholder="City/Zipcode (Default: San Diego)" aria-label="Search" />
                 <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
                   onclick="searchBrewery()" type="button">Brew Me</button>
               </form>
@@ -138,7 +138,7 @@
       </card>
     </article>
 
-    <table id="tableBrew" class="table d-none mb-0" style="background-color: #000; color: #fff; margin-bottom: 0;">
+    <table id="tableBrew" class="table d-none" style="background-color: #000; color: #fff; margin-bottom: 0;">
       <thead>
         <tr>
           <th scope="col">Brewery Name</th>
