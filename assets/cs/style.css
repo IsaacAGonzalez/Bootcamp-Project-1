@@ -92,7 +92,6 @@ body {
   border-radius: 100px;
 }
 
-
 /* Carousel */
 .carousel {
   margin-top: 0;
@@ -109,7 +108,6 @@ body {
   width: 100%;
   height: 600px;
 }
-
 
 /* Search Form */
 #searchBrew {
@@ -159,6 +157,7 @@ body {
   font-size: 17px;
 }
 
+/* Cocktail API */
 article {
   padding-bottom: 15px;
 }
@@ -179,10 +178,7 @@ article {
   background-color: var(--brew);
 }
 
-#modal {
-  font-family: "Special Elite", cursive;
-}
-
+/* Data Table */
 .brewLinkStyle {
   color: var(--brew);
 }
@@ -196,6 +192,12 @@ td {
   text-align: center;
 }
 
+/* modal pop */
+#modal {
+  font-family: "Special Elite", cursive;
+}
+
+/* MQ's */
 @media screen and (max-width: 1029px) {
   .navbar-brand {
     font-size: 60px;
