@@ -8,7 +8,7 @@ const car1address = document.querySelector('#car1address');
 const car2address = document.querySelector('#car2address');
 const car3address = document.querySelector('#car3address');
 
-// fetch data from api for carousel
+//  POST JSON-encoded data
 function getdata() {
     let myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer d-Zk9Nv2t5lmfuhdEBns4h0UgeAFRUV3-eubcRfjSaPKo5aFhZSi_8qfL7xtTsYghIBiwSmEvaA-yZ0L83ac-wgfOQST-XQqCJ0D7QCKPosrrFnLQu0rL0iK9TVjY3Yx");
@@ -26,7 +26,7 @@ function getdata() {
         .catch(error => console.log('error', error));
 }
 
-// get business names and display to carousel
+// get business randomly and display to carousel
 function getRandombrew(businesses) {
     const ranbusinesses = [];
     for (let i = 0; i < 3; i++) {
@@ -37,7 +37,7 @@ function getRandombrew(businesses) {
     displaycar(ranbusinesses);
 }
 
-// display image, name and address
+// display image, name and address in above
 function displaycar(randbusinesses) {
     carouselimg1.setAttribute('src', randbusinesses[0].image_url);
     carouselimg2.setAttribute('src', randbusinesses[1].image_url);
