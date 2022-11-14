@@ -27,7 +27,9 @@ function publishRecipe(input) {
 
   let headerDiv = document.createElement('div');
   let ingredientsDiv = document.createElement('div');
+  ingredientsDiv.classList.add("drinkIngredients");
   let instructionsDiv = document.createElement('div');
+  instructionsDiv.classList.add("drinkInstruction");
   headerDiv.innerHTML = `
     <h3 style="font-weight: bold;">${drinkName}</h3>
   `;

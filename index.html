@@ -46,13 +46,11 @@
         <div class="container card col-sm-12 bg-dark">
           <img src="./assets/images/So-CAL Logo.png" class="card-img-top rounded-circle mt-3 mb-3" alt="...">
 
-          <div class="card-body bg-light rounded">
+          <div class="bucketContainer card-body rounded">
             <h5 class="card-title text-center">Your Bucketlist</h5>
-
-
             <p class="card-text"></p>
-            <ul class="list-group list-group-flush" id="brew-list" style= "overflow: auto;
-            max-height: 40vh;"></ul>
+            <ol class="bucketStyle list-group list-group-flush" id="brew-list" style= "overflow: auto;
+            max-height: 40vh;"></ol>
           </div>
         </div>
       </aside>
@@ -108,23 +106,23 @@
     <!-- Cards -->
     <article id="searchBrew">
       <card class="border-top col-sm-12 d-flex justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-10"  id= "searchBrewStyle">
           <!-- inside card -->
           <div
-            class="mt-3 row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            class="mt-3 row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong id="nearYou" class="d-flex justify-content-center mb-2">Brew Near You</strong>
               <h3 class="d-flex justify-content-center mb-0"></h3>
               <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted"></div>
-              <p id="searchinfo" class="d-flex justify-content-center card-text mb-auto text-muted align-items-center">
-                SoCal destinations with the click of a button.
+              <p id="searchinfo" class="d-flex justify-content-center card-text mb-auto text-muted align-items-center text-center">
+                Find a destinations with the click of a button!<br>(Default location set to "San Diego")
               </p>
               <!-- Search Bar   -->
               <form class="d-flex justify-content-center mt-3" role="search">
                 <input id="usrSearch" class="form-control me-2 text-center" type="search" style="width: 50%"
-                  placeholder="Brewery Name (Optional)" aria-label="Search" />
+                  placeholder="Name of Brewery (Optional)" aria-label="Search" />
                 <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
-                  placeholder="City/Zipcode (Default: San Diego)" aria-label="Search" />
+                  placeholder="City/Zipcode" aria-label="Search" />
                 <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
                   onclick="searchBrewery()" type="button">Brew Me</button>
               </form>
@@ -149,19 +147,19 @@
     </table>
 
     <article style="background-color: #000; color: #fff; padding-top: 16px;">
-      <div class="container d-flex flex-column align-items-center pb-4" style="border: solid grey 3px; border-radius: 25 px; padding-top: 16px; width: 82%;">
+      <div class="container d-flex flex-column align-items-center pb-4" style="border: double var(--brew) 5px; border-radius: 35px; padding-top: 16px; width: 60%;">
 
-        <h4 class="d-flex flex-column align-items-center">Decided to stay home? Why not try the recipe below!?</h4>
-        <h4 class="d-flex flex-column align-items-center" style="text-decoration: underline;">Cocktail Recipe of the Day
+        <h4 class="d-flex flex-column align-items-center text-center" style="border-bottom: 1px solid var(--brew); padding: 5px;">Decided to stay home? Why not try the recipe below!?</h4>
+        <h4 class="d-flex flex-column align-items-center pt-4" style="text-decoration: underline var(--brew); color: var(--offwhite);">Cocktail Recipe of the Day
         </h4>
         <section class="d-flex flex-column align-items-center" id="dailyRecipe"></section>
-        <button class="btn btn-outline-light text-center justify-content-center mt-3" onclick="getCocktailRecipe()">Try another?</button>
+        <button class="anotherBtn btn btn-outline-light text-center justify-content-center mt-3" onclick="getCocktailRecipe()">Try another?</button>
       </div>
     </article>
 
     <footer>
       <section class="text-center about" style="text-decoration: none;
-      color: #b79b67; padding-top: 16px;">
+      color: #b79b67; padding-top: 16px; border-top: solid 2px var(--brew);">
         <h1>About Us</h1>
         <div class="container">
           <div class="row">
