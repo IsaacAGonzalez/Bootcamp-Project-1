@@ -8,7 +8,7 @@ const car1address = document.querySelector('#car1address');
 const car2address = document.querySelector('#car2address');
 const car3address = document.querySelector('#car3address');
 
-//  POST JSON-encoded data
+//get access to Fusion and print to console then fetch...
 function getdata() {
     let myHeaders = new Headers();
     myHeaders.append("Authorization", "Bearer d-Zk9Nv2t5lmfuhdEBns4h0UgeAFRUV3-eubcRfjSaPKo5aFhZSi_8qfL7xtTsYghIBiwSmEvaA-yZ0L83ac-wgfOQST-XQqCJ0D7QCKPosrrFnLQu0rL0iK9TVjY3Yx");
@@ -18,6 +18,7 @@ function getdata() {
         headers: myHeaders,
         redirect: 'follow'
     };
+    // fetching businesses across the network and printing it to the console
     fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=San Diego`, requestOptions)
         .then(response => response.json())
         .then(result => {
